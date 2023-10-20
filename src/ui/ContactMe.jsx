@@ -12,10 +12,10 @@ function ContactMe() {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        "service_zvg1t73",
+        "template_8dzkg3h",
         form.current,
-        import.meta.env.VITE_PUBLIC_KEY,
+        "SuBDOEjKB8HMsJqVj",
       )
       .then(
         (result) => {
