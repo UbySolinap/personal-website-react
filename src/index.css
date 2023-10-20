@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .list-items {
+    @apply rounded-xl border border-profile bg-profile px-4 py-1 text-sm font-semibold italic text-slate-50 transition-all hover:scale-110 sm:text-base md:text-lg;
+  }
+  .form-input {
+    @apply mt-5 w-3/4 rounded-sm border border-slate-900 px-2 py-1 font-medium transition-all focus:border-profile focus:outline-none focus:ring focus:ring-profile sm:w-1/2 md:text-lg;
+  }
+  .active-link {
+    @apply rounded-xl bg-profile px-4 py-2 font-bold text-slate-50 lg:text-3xl;
+  }
+}

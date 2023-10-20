@@ -1,0 +1,102 @@
+{
+  "jsProjects": [
+    {
+      "projectId": "js1",
+      "title": "Quotes of yore",
+      "img": "./js-proj-1.png",
+      "overview": "A quote generator featuring famous quotes from various ancient philosophies like Stoicism, Mysticism, Buddhism etc. The user can click a button of their chosen philosophy then a random quote from that philosophy will be displayed in the screen. Project was done with HTML, CSS and Javascript then the website was hosted using netlify. The API for philosopy quotes was provided by KaranDahiya and buddha-api.",
+      "githubLink": "https://github.com/UbySolinap/quoteofyore",
+      "projectLink": "https://quotesofyore.netlify.app",
+      "techUsed": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Git",
+        "Github",
+        "philosophy-quotes-API",
+        "buddha-API"
+      ]
+    },
+    {
+      "projectId": "js2",
+      "title": "Gamer's Savepoint",
+      "img": "./js-proj-2.png",
+      "overview": "This website is for gamers like me who wants to have a list of all the games that they finished, currently playing or in their backlog. This project's features is it allows the user to search any games in existence then a form will pop up that allows them to fill up the required input fields like what platform they finished the game and how many hours they put in it, then once submitted, it will be placed in their library. localStorage is used for storing the data for now. Project was done with HTML, CSS and Javascript then the website was hosted using netlify. RAWG API for the amazing collection of game database.",
+      "githubLink": "https://github.com/UbySolinap/gamers-savepoint",
+      "projectLink": "https://gamersavepoint.netlify.app/",
+      "techUsed": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Git",
+        "Github",
+        "RAWG API",
+        "localStorage"
+      ]
+    }
+  ],
+  "pythonProjects": [
+    {
+      "projectId": "py1",
+      "title": "London's Aesthetic Cafes",
+      "img": "./python-proj-1.jpg",
+      "overview": "London's Aesthetic Cafés is a website that contains the lists of available cafes around London. This website can give you information about a particular café that is on the list like the average price of coffee, the number of available seats, etc. The exact location of the café can also be viewed via Google Maps for the user’s convenience. Another feature of this website is that the user can suggest a café that is also available in London in case I missed a good café or a new one is in business. The user’s suggestion will then be reviewed and once approved, it will be added to the database and the café information can now be seen on the website. Utilized Heroku for hosting the website online.",
+      "githubLink": "https://github.com/UbySolinap/Cafe-Website",
+      "projectLink": "https://github.com/UbySolinap/Cafe-Website",
+      "techUsed": [
+        "Python",
+        "HTML",
+        "CSS",
+        "Google My Maps",
+        "SQLite",
+        "Git",
+        "Github",
+        "Heroku"
+      ]
+    },
+    {
+      "projectId": "py2",
+      "title": "Task Meister",
+      "img": "./python-proj-2.jpg",
+      "overview": "A task manager website where a user can register for free and organize their everyday task. This website’s best feature is its simplicity and ease of use which targets a very wide range of audience. The connection of the task to its task lists and task lists to its user was made possible by relating their respective databases so that the user can retrieve their tasks even if they close the website and come back for it later. Used Heroku to host the website online and Heroku Postres addon to manage the database of the registered users account online.",
+      "githubLink": "https://github.com/UbySolinap/Task-Manager",
+      "projectLink": "https://github.com/UbySolinap/Task-Manager",
+      "techUsed": ["Python", "HTML", "CSS", "SQLite", "Git", "Github", "Heroku"]
+    },
+    {
+      "projectId": "py3",
+      "title": "King Lyrics",
+      "img": "./python-proj-3.jpg",
+      "overview": "King Lyrics is a search engine website that allows the user to search for the lyrics of any song online. In the main page, it will feature the top 10 songs and artists in the US. If the user search for a song, three categories of matching results will come up. Those categories are for songs, artists, and lyrics. By utilizing the Musixmatch API, I was able to deliver the main function of this website thanks to their system and wide collections of song lyrics. But the account that I have is in a free version and its restriction is only 30% of the lyrics will be displayed on the website. Heroku was the cloud platform used to host the website online.",
+      "githubLink": "https://github.com/UbySolinap/Lyrics-Website",
+      "projectLink": "https://github.com/UbySolinap/Lyrics-Website",
+      "techUsed": [
+        "Python",
+        "HTML",
+        "CSS",
+        "SQLite",
+        "Git",
+        "Github",
+        "Musixmatch API",
+        "Heroku"
+      ]
+    },
+    {
+      "projectId": "py4",
+      "title": "Filipino Finest",
+      "img": "./python-proj-4.jpg",
+      "overview": "An e-commerce online restaurant website that focuses on selling ready-made Filipino foods. Since I’m from the Philippines, the variety of menus that can be browsed by the user is among the top cuisines from my country and they are also categorized, and each food has a picture present to avoid confusion. The user needs to create an account first before they can order. Then once the user is done with their order, the process of payment will be handled by stripe API.",
+      "githubLink": "https://github.com/UbySolinap/Online-Restaurant",
+      "projectLink": "https://github.com/UbySolinap/Online-Restaurant",
+      "techUsed": [
+        "Python",
+        "HTML",
+        "CSS",
+        "SQLite",
+        "Git",
+        "Github",
+        "Stripe API"
+      ]
+    }
+  ]
+}
