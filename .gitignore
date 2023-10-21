@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 *.env
+
+App-object.jsx

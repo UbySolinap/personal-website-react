@@ -45,12 +45,12 @@ function Projects() {
             <h1 className="mb-4 text-xl font-black sm:mb-6 md:mb-8 md:text-3xl">
               React Projects
             </h1>
-            <p className="mb-4 text-sm sm:mb-6 md:mb-8 md:text-lg">
+            <p className="mb-4 font-semibold sm:mb-6 md:mb-8 md:text-lg">
               COMING SOON
             </p>
           </div>
           <div className="mt-5">
-            <p className="font-medium md:w-3/4 xl:text-lg">
+            <p className="mb-2 font-medium md:w-3/4 xl:text-lg">
               Got any opportunities or suggestions for me?
             </p>
             <Button type="primary" onClick={() => navigate("/contact")}>

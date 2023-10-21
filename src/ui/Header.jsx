@@ -10,8 +10,8 @@ function Header() {
 
   return (
     <nav className="mb-10 mt-16 md:mb-20">
-      <div className="items-center justify-between sm:flex">
-        <div>
+      <div className="flex items-center justify-between">
+        <div className="sm:hover:animate-spin">
           <NavLink onClick={handleCloseMenuWhenNavigating} to="/">
             <img
               className="h-16 transition-all hover:scale-110 lg:h-24"

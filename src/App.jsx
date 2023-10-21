@@ -1,43 +1,39 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+import { Suspense, lazy } from "react";
 
-import AppLayout from "./ui/AppLayout";
-import Home from "./ui/Home";
-import About from "./ui/About";
-import Projects from "./ui/Projects";
-import ContactMe from "./ui/ContactMe";
-import ProjectOverview from "./ui/ProjectOverview";
+import Loader from "./components/Loader";
 
-const router = createBrowserRouter([
-  {
-    element: <AppLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/projects",
-        element: <Projects />,
-      },
-      {
-        path: "/projects/:projectId",
-        element: <ProjectOverview />,
-      },
+// Lazy Loading
+const AppLayout = lazy(() => import("./ui/AppLayout"));
+const Home = lazy(() => import("./ui/Home"));
+const About = lazy(() => import("./ui/About"));
+const Projects = lazy(() => import("./ui/Projects"));
+const ContactMe = lazy(() => import("./ui/ContactMe"));
+const ProjectOverview = lazy(() => import("./ui/ProjectOverview"));
 
-      {
-        path: "/contact",
-        element: <ContactMe />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<AppLayout />}>
+      <Route path="/" index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="projects/:projectId" element={<ProjectOverview />} />
+      <Route path="contact" element={<ContactMe />} />
+    </Route>,
+  ),
+);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<Loader />}>
+      <RouterProvider router={router} />;
+    </Suspense>
+  );
 }
 
 export default App;
