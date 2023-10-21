@@ -13,7 +13,7 @@ function Button({ children, onClick, type }) {
     submit:
       "cursor-pointer rounded-xl border-2 border-profile bg-profile px-2 py-1 font-semibold text-slate-50 transition-all hover:scale-105 hover:bg-slate-50 hover:text-profile sm:px-4 sm:py-2",
     return:
-      "cursor-pointer rounded-xl border-2 border-profile bg-profile px-2 font-semibold text-slate-50 transition-all hover:scale-105 hover:bg-slate-50 hover:text-profile",
+      "cursor-pointer rounded-xl border-2 border-profile bg-profile px-1 sm:px-2 sm:py-1 font-semibold text-slate-50 transition-all hover:scale-105 hover:bg-slate-50 hover:text-profile",
   };
 
   return (

@@ -27,11 +27,11 @@ function ProjectOverview() {
       <ProjectHeader />
       <div className="border-t-2 border-profile">
         <div className="mt-5">
-          <div className="mb-4 flex space-x-4">
-            <h1 className=" text-2xl font-black md:text-4xl">{title}</h1>
+          <div className="mb-4 flex space-x-2">
             <Button onClick={() => navigate(-1)} type="return">
-              Back <i className="fa-solid fa-left-long" />
+              <i className="fa-solid fa-reply" />
             </Button>
+            <h1 className="text-2xl font-black md:text-4xl">{title}</h1>
           </div>
 
           <img src={`../${img}`} alt="project img" className="rounded-md" />

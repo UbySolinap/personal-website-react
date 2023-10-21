@@ -54,7 +54,8 @@ function Projects() {
               Got any opportunities or suggestions for me?
             </p>
             <Button type="primary" onClick={() => navigate("/contact")}>
-              <i className="fa-solid fa-forward" /> You can contact me
+              <i className="fa-solid fa-forward" /> You can contact me{" "}
+              <i className="fa-regular fa-message" />
             </Button>
           </div>
         </div>

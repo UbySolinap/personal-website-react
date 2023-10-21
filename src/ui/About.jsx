@@ -66,7 +66,8 @@ function About() {
             <li className="list-items mb-4">Windows</li>
           </ul>
           <Button type="primary" onClick={() => navigate("/projects")}>
-            <i className="fa-solid fa-forward md:ml-5" /> View my projects
+            <i className="fa-solid fa-forward md:ml-5" /> View my projects{" "}
+            <i className="fa-solid fa-laptop-code" />
           </Button>
         </div>
       </div>

@@ -14,14 +14,15 @@ function Home() {
           John Uby Solinap
         </h1>
         <h1 className="text-2xl font-semibold md:text-2xl xl:text-3xl">
-          A Programmer.
+          A Programmer. <i className="fa-solid fa-code" />
         </h1>
         <p className="font-medium md:w-3/4 xl:text-lg">
           Through continuous learning and hands-on projects, I&apos;m on a
           journey to turn my passion for programming into real-world solutions.
         </p>
         <Button type="primary" onClick={() => navigate("/about")}>
-          <i className="fa-solid fa-forward" /> Get to know me more
+          <i className="fa-solid fa-forward" /> Get to know me more{" "}
+          <i className="fa-regular fa-lightbulb" />
         </Button>
       </div>
       <div className="mt-5 md:mt-0">
