@@ -57,7 +57,7 @@ function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2, ease: "easeIn" }}
+            transition={{ duration: 2, ease: "anticipate" }}
             src="./uby.JPG"
             alt="Uby pic"
             className="h-64 rounded-full md:h-72 lg:h-80"

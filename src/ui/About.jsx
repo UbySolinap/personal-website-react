@@ -11,7 +11,7 @@ function About() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <h1 className="mb-4 text-4xl font-black sm:mb-6 md:mb-8 md:text-5xl">
           About
@@ -54,23 +54,142 @@ function About() {
           <div className="md:mt-5 md:flex-1">
             <h1 className="mb-6 text-xl font-bold sm:text-3xl">Technologies</h1>
             <ul className="mb-3 flex flex-wrap space-x-4">
-              <li className="list-items mb-4">Python</li>
-              <li className="list-items mb-4">Flask</li>
-              <li className="list-items mb-4">HTML</li>
-              <li className="list-items mb-4">CSS</li>
-              <li className="list-items mb-4">Tailwind</li>
-              <li className="list-items mb-4">Bootstrap</li>
-              <li className="list-items mb-4">Javascript</li>
-              <li className="list-items mb-4">React</li>
-              <li className="list-items mb-4">Postgresql</li>
-              <li className="list-items mb-4">SQLite</li>
-              <li className="list-items mb-4">Git</li>
-              <li className="list-items mb-4">Github</li>
-              <li className="list-items mb-4">Netlify</li>
-              <li className="list-items mb-4">Heroku</li>
-              <li className="list-items mb-4">Vite</li>
-              <li className="list-items mb-4">Microsoft Office</li>
-              <li className="list-items mb-4">Windows</li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Python
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.1, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Flask
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.2, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                HTML
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.3, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                CSS
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.4, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Tailwind
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.5, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Bootstrap
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.6, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Javascript
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.7, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                React
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.8, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Postgresql
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.9, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                SQLite
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Git
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2.1, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Github
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2.2, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Netlify
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2.3, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Heroku
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2.4, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Vite
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2.5, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Microsoft Office
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2.6, ease: "anticipate" }}
+                className="list-items mb-4"
+              >
+                Windows
+              </motion.li>
             </ul>
             <Button type="primary" onClick={() => navigate("/projects")}>
               <i className="fa-solid fa-forward md:ml-5" /> View my projects{" "}

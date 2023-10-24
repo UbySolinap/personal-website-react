@@ -23,7 +23,7 @@ function Button({ children, onClick, type }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 2, ease: "anticipate" }}
+        transition={{ duration: 3.5, ease: "anticipate" }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         onClick={onClick}

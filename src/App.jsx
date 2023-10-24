@@ -7,6 +7,7 @@ import {
 import { Suspense, lazy } from "react";
 
 import Loader from "./components/Loader";
+import PageNotFound from "./ui/PageNotFound";
 
 // Lazy Loading
 const AppLayout = lazy(() => import("./ui/AppLayout"));
@@ -18,12 +19,15 @@ const ProjectOverview = lazy(() => import("./ui/ProjectOverview"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<AppLayout />}>
-      <Route path="/" index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="projects" element={<Projects />} />
-      <Route path="projects/:projectId" element={<ProjectOverview />} />
-      <Route path="contact" element={<ContactMe />} />
+    <Route>
+      <Route element={<AppLayout />}>
+        <Route path="/" index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="projects/:projectId" element={<ProjectOverview />} />
+        <Route path="contact" element={<ContactMe />} />
+      </Route>
+      <Route path="*" element={<PageNotFound />} />,
     </Route>,
   ),
 );
@@ -31,7 +35,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <Suspense fallback={<Loader />}>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </Suspense>
   );
 }

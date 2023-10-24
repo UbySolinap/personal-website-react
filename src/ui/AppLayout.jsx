@@ -11,7 +11,7 @@ function AppLayout() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 2, ease: "easeOut" }}
+        transition={{ duration: 2, ease: "linear" }}
         className="mx-5 sm:mx-8 md:mx-16 lg:mx-28 xl:mx-32 2xl:mx-72 3xl:mx-96"
       >
         <Header />
