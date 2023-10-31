@@ -2,6 +2,7 @@ import { Form } from "react-router-dom";
 import { useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 import Button from "../components/Button";
 
@@ -23,10 +24,10 @@ function ContactMe() {
           console.log(result.text);
           // This clears the form.
           e.target.reset();
-          window.alert("Message sent. Thank you!");
+          toast.success("Message sent. Thank you!");
         },
         (error) => {
-          console.error(error.text);
+          toast.error(error.text);
         },
       );
   };
